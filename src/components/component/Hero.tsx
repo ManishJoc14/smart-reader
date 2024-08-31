@@ -33,6 +33,13 @@ export function Hero() {
             <p className="text-center text-muted-foreground md:text-lg">
               Effortlessly read and translate words with our powerful app.
             </p>
+            <p className="text-center text-muted-foreground md:text-lg">
+              Select words and Press{" "}
+              <span className="font-extrabold md:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-indigo-500 to-sky-500 ">
+                CTRL + ENTER
+              </span>{" "}
+              to get translation.
+            </p>
           </div>
           {/* main text end */}
           {/* upload section */}
