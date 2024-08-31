@@ -91,9 +91,9 @@ export default function PDFViewer() {
     return () => document.removeEventListener("keydown", listener);
   }, []);
 
-  useEffect(()=>{
-    infoToast("Select words and press CTRL + Enter to translate"); 
-  })
+  // useEffect(()=>{
+  //   infoToast("Select words and press CTRL + Enter to translate"); 
+  // },[])
 
   return (
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
