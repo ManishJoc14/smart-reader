@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
+import { ToastContainer, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const fontHeading = Inter({
   subsets: ["latin"],
@@ -31,6 +33,20 @@ export default function RootLayout({
         className={cn("antialiased", fontHeading.variable, fontBody.variable)}
       >
         {children}
+        <ToastContainer
+          toastStyle={{ width: "550px", padding: "30px", fontSize: "1.12rem", lineHeight: "1.5" }}
+          position="top-center"
+          autoClose={10000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          transition={Bounce}
+        />
       </body>
     </html>
   );
